@@ -1,0 +1,1 @@
+export NUM="1/100" | echo $NUM\n
