@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Displays a string indefinitely
-while [[ 2 -eq2 ]]; do
+while [[ 2 -eq 2 ]]; do
   echo "To infinity and beyond"
   sleep 2
 done
