@@ -1,5 +1,5 @@
 # POSTMORTEM
-Followinf the release of alx-system_engineering-devops 0x19-postmortem project at about
+Following the release of alx-system_engineering-devops 0x19-postmortem project at about
 06:00 West African Time (WAT), an outage occurred on an isolated Ubuntu 14.04 container
 running an Apache web server. GET requests on the server led to 
 `500 Internal Server Error`'s, when the expected response was an HTML file defining a simple
@@ -8,7 +8,8 @@ running an Apache web server. GET requests on the server led to
 ## Debugging Process
 
 At about 18:06hours WAT, upon encountering the issue on opening the project and being
-encouraged to address it, I proceeded to initiate the following steps to solve the problem:
+encouraged to address it, I put on my Captain America's kit, ready to save the day!
+Then proceeded to initiate the following steps to solve the problem:
 
 1. Checked running processes using `ps aux`. Two `apache2` processes - `root` and `www-data` -
 were properly running.
@@ -58,3 +59,5 @@ Note that in response to this error, I wrote a Puppet manifest
 [0-strace_is_your_friend.pp](https://github.com/DanielOfodile/alx-system_engineering-devops/blob/master/0x17-web_stack_debugging_3/0-strace_is_your_friend.pp)
 to automate fixing of any such identitical errors should they occur in the future. The manifest
 replaces any `phpp` extensions in the file `/var/www/html/wp-settings.php` with `php`.
+
+But of course, it will never occur again, because we're programmers, and we never make errors :wink:
